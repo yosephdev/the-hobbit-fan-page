@@ -40,7 +40,8 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://i.pinimg.com/originals/e7/f6/f0/e7f6f0d13e808175b7cc64f812e0efd9.jpg')">
+    <header class="masthead"
+        style="background-image: url('https://i.pinimg.com/originals/e7/f6/f0/e7f6f0d13e808175b7cc64f812e0efd9.jpg')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -93,7 +94,8 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+                    <p class="copyright text-muted">Copyright &copy; The Hobbit Fan Page <span id="copyright"></span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -105,6 +107,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
 </body>
 
 </html>
