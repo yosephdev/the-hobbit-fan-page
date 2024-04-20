@@ -1,63 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Man must explore, and this is exploration at its greatest
-                </h2>
-                <h3 class="post-subtitle">
-                    Problems look mighty small from 150 miles up
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 24, 2019</p>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Welcome to The Hobbit Fan Page</h1>
+        <p class="lead">Explore the world of Thorin Oakenshield and his company of dwarves.</p>
+        <a href="{{ url_for('about') }}" class="btn btn-primary">Meet the Company</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>About the Quest</h2>
+            <p>Join Thorin and his loyal companions on their epic journey to reclaim the Lonely Mountain from the
+                fearsome dragon Smaug. Discover the challenges they face, the battles they fight, and the unbreakable
+                bond that unites them.</p>
+            <a href="https://lotr.fandom.com/wiki/Thorin_and_Company" target="_blank" class="btn btn-primary">Learn More</a>
         </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                </h2>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 18, 2019</p>
+        <div class="col-md-4">
+            <h2>Fan Forum</h2>
+            <p>Join fellow fans in discussing your favorite characters, sharing theories, and celebrating the enduring
+                legacy of The Hobbit.</p>
+            <a href="{{ url_for('forum') }}" class="btn btn-secondary">Join the Discussion</a>
         </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Science has not yet mastered prophecy
-                </h2>
-                <h3 class="post-subtitle">
-                    We predict too much for the next year and yet far too little for the next ten.
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Failure is not an option
-                </h2>
-                <h3 class="post-subtitle">
-                    Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                </h3>
-            </a>
-            <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Recent Forum Posts</h2>
+            <ul class="list-group">
+                {% for post in recent_posts %}
+                <li class="list-group-item">
+                    <h4>{{ post.title }}</h4>
+                    <p>{{ post.content[:100] }}...</p>
+                    <small>Posted by {{ post.author }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
