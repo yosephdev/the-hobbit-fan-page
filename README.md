@@ -1,44 +1,84 @@
-# Building The Hobbit Fan Page: Thorin and Company
+# The Hobbit Fan Page: Thorin and Company
 
-This document outlines the steps to build a Flask web application from scratch. The application will serve as a fan page for Thorin Oakenshield and his company of dwarves from J.R.R. Tolkien's beloved novel, *The Hobbit*. The app will provide information about the characters, their quest, and allow fans to share their thoughts and appreciation.
+This is a Flask web application that serves as a fan page for Thorin Oakenshield and his company of dwarves from J.R.R. Tolkien's beloved novel, The Hobbit. The app provides information about the characters, their quest, and allows fans to share their thoughts and appreciation.
+
+[Page Overview](external-link)
+
+## Features
+
+- **Character Profiles:** Detailed profiles of Thorin and each member of his company, including their backgrounds, personalities, and roles in the quest.
+- **Quest Overview:** A comprehensive overview of the dwarves' quest to reclaim the Lonely Mountain from the dragon Smaug. 
+- **Fan Forum:** A dedicated section within the application that displays recent discussions and allows users to start new discussions. The forum includes the following features:
+  - **Recent Discussions:** A list of recent discussions or forum posts, each displaying the title, a brief description, and the name of the user who posted it along with the date.
+  - **Start a New Discussion:** A form where users can enter a topic and message to start a new discussion.
 
 ## Planned Features
-- **Character Profiles:** Detailed profiles of Thorin and each member of his company, including their backgrounds, personalities, and roles in the quest.
-- **Quest Overview:** A comprehensive overview of the dwarves' quest to reclaim the Lonely Mountain from the dragon Smaug.
-- **Fan Forum:** A dedicated forum where fans can discuss their favorite characters, share fan art, theories, and engage with fellow enthusiasts.
-- **Merchandise:** A section showcasing official and fan-made merchandise related to *The Hobbit* and the dwarves' company.
 
-## Technologies to be Used
-- **Flask:** A lightweight Python web framework that I will use for building the application.
-- **HTML/CSS:** Markup and styling languages for creating the user interface.
-- **JavaScript:** Programming language for adding interactivity and dynamic behavior to the web pages.
-- **SQLite:** A lightweight, file-based database management system that I will use for storing user data and forum posts.
+- **Fan Forum:** While the application doesn't have a fully-fledged custom fan forum, it provides a section that simulates the experience of a fan forum by displaying sample discussions and allowing users to submit new discussion topics and messages through a form.
+
+## Technologies Used
+
+- Flask: A lightweight Python web framework used for building the application.
+- HTML/CSS: Markup and styling languages for creating the user interface.
+- JSON: Data interchange format used for communication between the backend and frontend of the application.
 
 ## Steps to Build the Application
+
 To build the application locally, follow these steps:
 
 1. **Clone the repository:**
+
    ```bash
+   
    git clone https://github.com/your-username/the-hobbit-fan-page.git
+
 2. **Navigate to the project directory:**
+
    ```bash
+
    cd the-hobbit-fan-page
+
 3. **Create and activate a virtual environment (optional but recommended):**
+
    ```bash
    python -m venv env
    source env/bin/activate  
 
    On Windows, use `env\Scripts\activate`
+
 4. **Install the required dependencies:**
+
    ```bash
+
    pip install -r requirements.txt
+
 5. **Set up the database:**
+
    ```bash
+
    flask db upgrade
+
 6. **Run the application:**
+
    ```bash
+
    flask run
 
-7. Open your web browser and visit http://localhost:5000 to access the fan page.
+7. Open your web browser and visit <http://localhost:5000> to access the fan page.
 
-I will update this README.md file as I progress through building the Flask app, adding more details and instructions as needed.
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive commit messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the main repository.
+
+## Acknowledgments
+
+- J.R.R. Tolkien for creating the incredible world of Middle-earth and the beloved characters from The Hobbit.
+- Tim Nelson, Software Developer and Tutor at Code Institute, for preparing and presenting the walkthrough of the application
+- The Flask community for their excellent documentation and support.
+- All the contributors who have helped make this project better.
