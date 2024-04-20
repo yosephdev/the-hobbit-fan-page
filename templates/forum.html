@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h1 class="my-4">{{ page_title }}</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Recent Discussions</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>Who is your favorite dwarf?</h4>
+                        <p>Share your thoughts on which member of Thorin's company is your favorite and why.</p>
+                        <small>Posted by John Denver on 2023-04-20</small>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Theories about the Arkenstone</h4>
+                        <p>What do you think the Arkenstone represents? Discuss your theories and interpretations.</p>
+                        <small>Posted by Jane Smith on 2023-04-18</small>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Fan Art Showcase</h4>
+                        <p>Share your fan art creations inspired by The Hobbit and Thorin's company.</p>
+                        <small>Posted by Alex Johnson on 2023-04-15</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>Start a New Discussion</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="topic">Topic</label>
+                        <input type="text" class="form-control" id="topic" placeholder="Enter topic">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
