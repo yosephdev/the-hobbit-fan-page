@@ -5,31 +5,50 @@
 
 <div class="row justify-content-center">
     <div class="col-md-10 col-lg-8 col-xl-7">
-        <p>Want to get in touch? Fill out the form below to send us a message, and we'll get back to you as soon as possible!</p>
+
+        {% with messages = get_flashed_messages()
+            %}
+        {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+               <li class="flash-item">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+
+        {% endwith %}
+
+        <p>Want to get in touch? Fill out the form below to send us a message, and we'll get back to you as soon as
+            possible!</p>
         <div>
             <form id="contactForm" method="post">
                 <div class="form-floating">
-                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."
+                        required />
                     <label for="name">Name</label>
                     <div class="invalid-feedback">A name is required.</div>
                 </div>
                 <div class="form-floating">
-                    <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email..." required />
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email..."
+                        required />
                     <label for="email">Email address</label>
                     <div class="invalid-feedback">An email is required.</div>
                     <div class="invalid-feedback">Email is not valid.</div>
                 </div>
                 <div class="form-floating">
-                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Enter your phone number..." required />
+                    <input class="form-control" id="phone" name="phone" type="tel"
+                        placeholder="Enter your phone number..." required />
                     <label for="phone">Phone Number</label>
                     <div class="invalid-feedback">A phone number is required.</div>
                 </div>
                 <div class="form-floating">
-                    <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 12rem" required></textarea>
+                    <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..."
+                        style="height: 12rem" required></textarea>
                     <label for="message">Message</label>
                     <div class="invalid-feedback">A message is required.</div>
                 </div>
-                <br />               
+                <br />
                 <div class="d-none" id="submitErrorMessage">
                     <div class="text-center text-danger mb-3">Error sending message!</div>
                 </div>
