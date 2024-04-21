@@ -57,7 +57,7 @@ pyasn1-modules==0.3.0
 PyGObject==3.42.1
 pygsheets==2.0.6
 PyJWT==2.3.0
-pymongo==4.6.1
+pymongo==4.6.3
 pyparsing==2.4.7
 python-apt==2.4.0+ubuntu1
 python-dateutil==2.8.2
