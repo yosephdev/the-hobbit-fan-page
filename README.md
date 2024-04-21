@@ -27,8 +27,10 @@ To build the application locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   
+
    git clone https://github.com/your-username/the-hobbit-fan-page.git
+
+   ```
 
 2. **Navigate to the project directory:**
 
@@ -36,13 +38,17 @@ To build the application locally, follow these steps:
 
    cd the-hobbit-fan-page
 
+   ```
+
 3. **Create and activate a virtual environment (optional but recommended):**
 
    ```bash
    python -m venv env
-   source env/bin/activate  
+   source env/bin/activate
 
    On Windows, use `env\Scripts\activate`
+
+   ```
 
 4. **Install the required dependencies:**
 
@@ -50,17 +56,23 @@ To build the application locally, follow these steps:
 
    pip install -r requirements.txt
 
+   ```
+
 5. **Set up the database:**
 
    ```bash
 
    flask db upgrade
 
+   ```
+
 6. **Run the application:**
 
    ```bash
 
    flask run
+
+   ```
 
 7. Open your web browser and visit <http://localhost:5000> to access the fan page.
 
