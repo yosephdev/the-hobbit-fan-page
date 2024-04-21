@@ -13,7 +13,7 @@ cycler==0.12.1
 dbus-python==1.2.18
 distro==1.7.0
 distro-info===1.1build1
-Django==3.2.12
+Django==3.2.25
 django-crontab==0.7.1
 dnspython==2.5.0
 eventlet==0.35.1
