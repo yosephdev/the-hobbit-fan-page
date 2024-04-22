@@ -1,9 +1,28 @@
-core.Microsoft*
-core.mongo*
-core.python*
+# Ignore core.Microsoft* directories
+core.Microsoft*/
+
+# Ignore core.mongo* directories
+core.mongo*/
+
+# Ignore core.python* directories
+core.python*/
+
+# Ignore env.py file
 env.py
-__pycache__/
-*.py[cod]
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore node_modules directory (for Node.js projects)
 node_modules/
+
+# Ignore .github directory
 .github/
+
+# Ignore cloudinary_python.txt file
 cloudinary_python.txt
+
+# Ignore venv file
+venv/
