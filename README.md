@@ -2,10 +2,14 @@
 
 This is a Flask web application that serves as a fan page for Thorin Oakenshield and his company of dwarves from J.R.R. Tolkien's beloved novel, The Hobbit. The app provides information about the characters, their quest, and allows fans to share their thoughts and appreciation.
 
+![Page Overview](static/img/mockup.png)
+
+This mockup was generated using [Am I Responsive](https://ui.dev/amiresponsive?url=https://the-hobbit-fan-page-3f0698293642.herokuapp.com/).
+
 ## Features
 
 - **Character Profiles:** Detailed profiles of Thorin and each member of his company, including their backgrounds, personalities, and roles in the quest.
-- **Quest Overview:** A comprehensive overview of the dwarves' quest to reclaim the Lonely Mountain from the dragon Smaug. [Quest Overview](external-link)
+- **Quest Overview:** A comprehensive overview of the dwarves' quest to reclaim the Lonely Mountain from the dragon Smaug.
 - **Fan Forum:** A dedicated section within the application that displays recent discussions and allows users to start new discussions. The forum includes the following features:
   - **Recent Discussions:** A list of recent discussions or forum posts, each displaying the title, a brief description, and the name of the user who posted it along with the date.
   - **Start a New Discussion:** A form where users can enter a topic and message to start a new discussion.
